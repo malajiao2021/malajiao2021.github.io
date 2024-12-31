@@ -8,30 +8,38 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="assets/images/logo.png" alt="我的博客" width="50">
+        <div class="logo-container">
+            <img src="assets/images/logo.png" alt="我的博客" class="logo">
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于我</a></li>
-                <li><a href="post1.html">我的第一篇文章</a></li>
-                <li><a href="post2.html">我的第二篇文章</a></li>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="about.html" class="nav-link">关于我</a></li>
+                <li><a href="post1.html" class="nav-link">我的第一篇文章</a></li>
+                <li><a href="post2.html" class="nav-link">我的第二篇文章</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>欢迎来到我的个人博客</h1>
-        <section class="posts">
-            <article class="post">
-                <h2><a href="post1.html">我的第一篇文章</a></h2>
-                <p>这是我博客的第一篇文章，内容包括我开始写博客的原因，欢迎阅读！</p>
-            </article>
-            <article class="post">
-                <h2><a href="post2.html">我的第二篇文章</a></h2>
-                <p>在这篇文章中，我将分享我的编程学习经验和技巧，敬请期待！</p>
-            </article>
+        <section class="hero">
+            <h1>欢迎来到我的个人博客</h1>
+            <p>在这里，我将与大家分享我的编程学习历程、技术分享以及个人心得。</p>
+            <a href="#posts" class="cta-button">浏览我的文章</a>
+        </section>
+
+        <section id="posts" class="posts">
+            <h2>最新文章</h2>
+            <div class="post-preview">
+                <article class="post">
+                    <h3><a href="post1.html">我的第一篇文章</a></h3>
+                    <p>这是我博客的第一篇文章，内容包括我开始写博客的原因，欢迎阅读！</p>
+                </article>
+                <article class="post">
+                    <h3><a href="post2.html">我的第二篇文章</a></h3>
+                    <p>在这篇文章中，我将分享我的编程学习经验和技巧，敬请期待！</p>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -42,4 +50,3 @@
     <script src="assets/js/script.js"></script>
 </body>
 </html>
-
